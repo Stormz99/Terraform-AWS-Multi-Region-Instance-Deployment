@@ -12,7 +12,10 @@ Make sure you have AWS credentials configured with the necessary permissions for
 
 Directory Structure
 terraform-aws-multi-region-instance/
+```
 |-- server/-- central/
+```
+```
 |       |-- main.tf
 |       |-- variables.tf
 |       |-- provider.tf
@@ -20,7 +23,9 @@ terraform-aws-multi-region-instance/
 |       |-- central-dev.tfvars
 |       |-- central-prod.tfvars
 |       |-- deploy.sh
+```
 
+```
 |-- server/-- west/
 |       |-- main.tf
 |       |-- variables.tf
@@ -29,10 +34,13 @@ terraform-aws-multi-region-instance/
 |       |-- west-dev.tfvars
 |       |-- west-prod.tfvars
 |       |-- deploy.sh
+````
 
 Initialize Terraform:
+```
 terraform init
-
+```
 Apply the Terraform configuration:
+```
 terraform apply
-
+```
