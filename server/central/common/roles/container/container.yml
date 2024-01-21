@@ -1,0 +1,7 @@
+- name: Create a nginx container
+  community.docker.docker_container:
+    name: Nginx
+    image: nginx
+    ports:
+      - "80:80"
+  tags: nginx-container

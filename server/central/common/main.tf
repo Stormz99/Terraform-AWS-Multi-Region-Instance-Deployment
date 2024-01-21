@@ -1,0 +1,9 @@
+- name: Complete Docker Setup and Nginx Container Startup
+    hosts: localhost
+    become: true
+    become_method: ansible.builtin.sudo
+    roles:
+    - name: Setup Docker on the server
+        role: docker
+    - name: Start Nginx Container on the server
+        role: container
